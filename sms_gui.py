@@ -8,14 +8,14 @@ import sms
 class Main(Qw.QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle(u'Αποστολή SMS από Cosmote')
+        self.setWindowTitle(u'Αποστολή SMS από otenet')
         mainLayout = Qw.QVBoxLayout(self)
         glay = Qw.QGridLayout()
         buttonLayout = Qw.QHBoxLayout()
         mainLayout.addLayout(glay)
         mainLayout.addLayout(buttonLayout)
         self.email = Qw.QLineEdit()
-        self.email.setToolTip('Το email του λογαριασμού σας της Cosmote')
+        self.email.setToolTip('Το email του λογαριασμού σας της otenet')
         self.passw = Qw.QLineEdit()
         self.passw.setToolTip('Ο κωδικός πρόσβασης')
         self.mobil = Qw.QLineEdit()
