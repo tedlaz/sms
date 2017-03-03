@@ -12,7 +12,7 @@ smsurl = "https://tools.otenet.gr/?_task=websms&_action=plugin.websms_compose&_f
 
 def send_sms(email, password, mobile, message):
     '''
-    Σύνδεση με cosmote και αποστολή web sms (5 την ημέρα, 100 το μήνα)
+    connect to otenet and sent web sms (5 per day, 100 per month)
     '''
     browser = mechanicalsoup.StatefulBrowser()
     browser.set_verbose(2)
