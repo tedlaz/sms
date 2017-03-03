@@ -51,7 +51,7 @@ class Main(Qw.QDialog):
         if len(messg) == 0:
             errors += 'Το μύνημα δεν μπορεί να είναι κενό\n'
         if len(messg) > 160:
-            errors += 'Το μύνημα δεν μπορεί μεγαλύτερο από 160 χαρακτήρες\n'
+            errors += 'Το μύνημα δεν μπορεί να είναι μεγαλύτερο από 160 χαρακτήρες\n'
         if errors:
             Qw.QMessageBox.critical(self, u"Υπάρχουν λάθη", '%s' % errors)
         else:
